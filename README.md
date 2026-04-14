@@ -24,7 +24,9 @@
 | 平台 | 文件 |
 |------|------|
 | Windows | `juhe-cli.exe` + `juhe-sync.exe` |
-| Linux | `juhe-cli` + `juhe-sync` |
+| Linux amd64 | `juhe-cli-linux` + `juhe-sync-linux` |
+| macOS Intel | `juhe-cli-darwin-amd64` + `juhe-sync-darwin-amd64` |
+| macOS Apple Silicon | `juhe-cli-darwin-arm64` + `juhe-sync-darwin-arm64` |
 
 将二进制文件放到任意目录，确保在 PATH 中或记住路径。
 
