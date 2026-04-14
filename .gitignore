@@ -1,0 +1,25 @@
+# Binaries
+juhe-cli
+juhe-cli.exe
+juhe-sync
+juhe-sync.exe
+juhe-sync-linux
+sync.exe
+
+# Source code (closed source)
+cmd/
+pkg/
+sync/
+main.go
+go.mod
+go.sum
+Makefile
+
+# Internal configs
+.claude/
+.omc/
+.openclaw/
+openspec/
+
+# Docs with sensitive API details
+docs/
