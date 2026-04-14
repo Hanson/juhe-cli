@@ -97,8 +97,7 @@ cat > juhe-sync.json << 'EOF'
   "app_secret": "your-app-secret",
   "guids": ["guid-001", "guid-002"],
   "port": 8070,
-  "db_path": "./juhe-sync.db",
-  "sync_interval": 300
+  "db_path": "./juhe-sync.db"
 }
 EOF
 
