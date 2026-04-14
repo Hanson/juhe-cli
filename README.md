@@ -116,6 +116,8 @@ juhe-cli client set_notify_url '{"guid": "xxx", "notify_url": "http://your-serve
 juhe-cli wx client set_notify_url '{"guid": "xxx", "notify_url": "http://your-server:8070/callback"}'
 ```
 
+> **注意**：`set_notify_url` 会覆盖该实例原有的回调地址。如果之前已有回调配置（如对接其他系统），请确保新地址能同时处理原有逻辑，或使用支持转发的回调服务。
+
 ### 5. 开始使用
 
 在 Claude Code 中直接用自然语言操作：
