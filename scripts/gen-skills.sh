@@ -172,3 +172,17 @@ generate_skill "cdn"     "juhecli-cdn"     "企微CDN文件管理 - 获取云存
 
 echo ""
 echo "完成。"
+
+# 部署到全局 ~/.claude/skills/
+echo ""
+echo "部署到全局 ~/.claude/skills/ ..."
+GLOBAL_SKILLS="$HOME/.claude/skills"
+mkdir -p "$GLOBAL_SKILLS"
+for dir in "$SKILLS_DIR"/juhecli-*/; do
+    [ -d "$dir" ] || continue
+    name=$(basename "$dir")
+    mkdir -p "$GLOBAL_SKILLS/$name"
+    cp "$dir/SKILL.md" "$GLOBAL_SKILLS/$name/SKILL.md"
+    echo "  部署: $name"
+done
+echo "全局部署完成。"
